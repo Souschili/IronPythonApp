@@ -7,4 +7,22 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DynamicLanguageRuntime" Version="1.3.3" />
+    <PackageReference Include="IronPython" Version="3.4.0" />
+    <PackageReference Include="IronPython.StdLib" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Script\Hello.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Script\Hello2.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Script\square.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
